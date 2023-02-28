@@ -1,11 +1,11 @@
 .navigation {
-    display: flex;
+  display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     height: 111px;
     background-color: #FAFCFB;
-    
+  
     color: #fff;
   }
   
@@ -28,100 +28,126 @@
   }
   
   .menu a {
-    color: #919192
-    ;
+  color: #919192;
     font-size: 12px;
     text-decoration: none;
   }
-  /* mobile */
-  
-  @media screen and (max-width: 768px) {
-    .navigation {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .toggle-button {
-      display: block;
-      background-color: transparent;
-      border: none;
-      font-size: 24px;
-      color: #42CCCF;
-      cursor: pointer;
-    }
-  
-    .menu {
-      display: none;
-      width: 100%;
-      margin: 0;
-      padding: 20px;
-      background-color: #FAFCFB;
-      text-align: center;
-      transition: all 0.3s ease;
-    }
-  
-    .open {
-      display: flex;
-      flex-direction: column;
-      max-width: 100%;
-    }
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
   }
- 
-  /* big screens */
-  @media screen and (min-width: 768px) {
-    .navigation {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-  
-   
-   
-    .menu {
-        display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: auto;
-      padding: 0;
-    }
-  
-    .menu li {
-      margin: 0 10px;
-    }
-  
-    .menu a {
-      font-size: 12px;
-    }
 
-
-
-
-
-
-
-
-
+  .toggle-button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #42CCCF;
+    cursor: pointer;
   }
-  
-  
-  .heroContainer{
 
-    background-image: url('https://st.depositphotos.com/1011643/3076/i/600/depositphotos_30768111-stock-photo-african-nurse-taking-care-of.jpg');
+  .menu {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #FAFCFB;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .open {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+
+/* big screens */
+@media screen and (min-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 0;
+  }
+
+  .menu li {
+    margin: 0 10px;
+  }
+
+  .menu a {
+    font-size: 12px;
+  }
+}
+.heroContainer {
+
     margin: 0;
     padding: 0;
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
     width: 100%;
-    }
+  height: 600px;
+}
+        .heroDescription {
+          /* margin-left: 200px; */
+          padding-top: 120px;
+          padding-left: 100px;
+        }
     
-  .heroDescription{
-    margin-left: 200px;
-    padding: 100px;
-
-  }
-  .description{
-    font-size: 70px;
-  }
+        .description {
+          font-size: 50px;
+          color: #333333;}
+    
+          .descriptionb {
+            color: #333333;
+            font-weight: bolder;}
   
+      .heroBtn {
+          margin-left: 100px;
+          margin-top: 50px;
+          width: 180px;
+          height: 76px;
+          background: #43D5CB;
+          border: none;
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 700px;
+          font-size: 18px;
+          padding-left: 10px;
+          color: #FCFEFE;}
+      
+          .heroBtnSpan {
+      
+            width: 69px;
+            height: 76px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: -60px;
+            color: white;
+            font-size: 30px;
+            background: #37c7be;
+          }
+      
+          .btnContainer {
+            display: flex;
+            flex-direction: row;
+      
+          }
