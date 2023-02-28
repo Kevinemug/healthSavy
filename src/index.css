@@ -1,0 +1,127 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 111px;
+    background-color: #FAFCFB;
+    
+    color: #fff;
+  }
+  
+  .toggle-button {
+    display: none;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+  }
+  
+  .menu a {
+    color: #919192
+    ;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  /* mobile */
+  
+  @media screen and (max-width: 768px) {
+    .navigation {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .toggle-button {
+      display: block;
+      background-color: transparent;
+      border: none;
+      font-size: 24px;
+      color: #42CCCF;
+      cursor: pointer;
+    }
+  
+    .menu {
+      display: none;
+      width: 100%;
+      margin: 0;
+      padding: 20px;
+      background-color: #FAFCFB;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+  
+    .open {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+    }
+  }
+ 
+  /* big screens */
+  @media screen and (min-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+  
+   
+   
+    .menu {
+        display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      padding: 0;
+    }
+  
+    .menu li {
+      margin: 0 10px;
+    }
+  
+    .menu a {
+      font-size: 12px;
+    }
+
+
+
+
+
+
+
+
+
+  }
+  
+  
+  .heroContainer{
+
+    background-image: url('https://st.depositphotos.com/1011643/3076/i/600/depositphotos_30768111-stock-photo-african-nurse-taking-care-of.jpg');
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    }
+    
+  .heroDescription{
+    margin-left: 200px;
+    padding: 100px;
+
+  }
+  .description{
+    font-size: 70px;
+  }
+  
