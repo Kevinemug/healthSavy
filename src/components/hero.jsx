@@ -1,6 +1,7 @@
 import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
-import ImageSlider from "./imageSlider";
+import Fade from "react-awesome-reveal";
+
 const Hero = ({ title, description, image }) => {
   return (
     <>
@@ -11,14 +12,25 @@ const Hero = ({ title, description, image }) => {
         }}
       >
         <div className="heroDescription">
-          <p className="description">{title} </p>
-          <p className="description descriptionb">{description}</p>
+          <p className="description animate__animated animate__flash">
+            {title}{" "}
+          </p>
+          <p className=" descriptionb animate__animated animate__bounce">
+            {description}
+          </p>
         </div>
         <div className="btnContainer">
-          <button className="heroBtn"> Learn More</button>
-          <div className="heroBtnSpan">
-            <BsArrowRightShort />
-          </div>
+          <Fade left>
+            <button className="heroBtn animate__animated animate__bounce">
+              {" "}
+              Learn More
+            </button>
+          </Fade>
+          <Fade right>
+            <div className="heroBtnSpan">
+              <BsArrowRightShort />
+            </div>
+          </Fade>
         </div>
       </div>
     </>

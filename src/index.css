@@ -111,12 +111,20 @@
         }
     
         .description {
-          font-size: 50px;
-          color: #333333;}
+          font-size: 60px;
+          width:400px;
+          display: flex;
+          align-items: center;
+
+          color: #333333;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);;}
     
           .descriptionb {
             color: #333333;
-            font-weight: bolder;}
+            width:500px;
+
+            font-weight: bolder;
+            font-size: 50px;}
   
       .heroBtn {
           margin-left: 100px;
