@@ -1,8 +1,13 @@
 import React from "react";
+import Create from "./create";
+import Login from "./login";
 const Profile = () => {
   return (
     <>
-      <h1>Profile</h1>
+      <div>
+        {/* <Login/> */}
+        <Create />
+      </div>
     </>
   );
 };

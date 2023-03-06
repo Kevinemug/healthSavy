@@ -40,7 +40,7 @@ export const Navigation = () => {
             <a href="">Appointments</a>
           </li>
         </NavLink>
-        <NavLink to="/">
+        <NavLink to="/profile">
           <li>
             <a href="/">Profile</a>
           </li>
