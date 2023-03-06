@@ -2,7 +2,7 @@ import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 import Fade from "react-awesome-reveal";
 
-const Hero = ({ title, description, image }) => {
+const Hero = ({ title, description, image, fn }) => {
   return (
     <>
       <div
