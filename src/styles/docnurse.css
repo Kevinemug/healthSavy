@@ -1,0 +1,78 @@
+.docNurseContainer{
+    max-width: 100%;
+    box-shadow:      2px 2px 4px rgba(0, 0, 0, 0.2);
+    height: 150px;
+    margin-top: 40px;
+    border-radius: 20px;
+display: flex;
+flex-direction: row;
+
+gap: 20px;
+}
+
+
+.medImage{
+    /* background-image: url("https://images.theconversation.com/files/304957/original/file-20191203-66986-im7o5.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop"); */
+    width:150px;
+    height:150px;
+    border-radius: 75px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.docNurseDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.doci{
+font-weight: bolder;
+}
+.cari{
+    margin-top: -12px;
+    color: grey;
+    font-weight: bold;
+
+}
+.appointment{
+    margin-left: 100px;
+    margin-top: 10px;
+    color: #56a2e9;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) { 
+
+
+    .docNurseContainer{
+        max-width: 100%;
+        width: 400px;
+        box-shadow:      2px 2px 4px rgba(0, 0, 0, 0.2);
+        height: 150px;
+        margin-top: 40px;
+        border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    
+    gap: 20px;
+    }
+    
+
+}
+@media only screen and (min-width: 1200px) {
+    .docNurseContainer{
+        max-width: 100%;
+        width: 400px;
+        box-shadow:      2px 2px 4px rgba(0, 0, 0, 0.2);
+        height: 150px;
+        margin-top: 40px;
+        border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 36px;
+    
+    gap: 20px;
+    }
+    
+
+}

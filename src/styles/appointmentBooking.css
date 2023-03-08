@@ -1,0 +1,174 @@
+.overlayStyles{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.popupStyles{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 580px;
+    background-color: white;
+    z-index:  2;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width:100%;
+}
+.helperImage{
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+}
+.helperImageContainer{
+    display:flex;
+justify-content: center;
+align-items: center;}
+.helperName{
+    font-weight: bolder;
+    margin-left: 70px;
+}
+.helperDescription{
+    color: grey;
+    margin-left: 80px;
+}
+.helperDesc{
+    color: grey;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.bookingButtons{
+display: flex;
+flex-direction: row;
+margin-top: 50px;
+gap: 10px;
+margin-top: 20px;
+}
+.price{
+    width: 70px;
+    border-radius: 10%;
+border:1px solid grey;
+background: white;
+color: #43D5CB;
+font-weight: bolder;
+}
+.book{
+    height:50px;
+    border-radius: 10%;
+    background: #43D5CB;
+    color: white;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+.book:focus{
+    outline:none;
+}
+.four{
+    max-width: 100%;
+    width: 100%;
+}
+.five{
+    max-width: 100%;
+    width: 100%;
+}
+.six{
+    max-width: 100%;
+    width: 100%;
+}
+.cancel{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .popupStyles{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: 700px;
+        background-color: white;
+        z-index:  2;
+        border-radius: 5px;
+        padding: 20px;
+        box-sizing: border-box,
+    }
+    .helperImage{
+        width: 400px;
+        height: 400px;
+        max-width: 100%;
+    }
+    .helperName{
+        font-weight: bolder;
+        margin-left: 170px;
+        margin-top: 5px;
+    }
+    .helperDescription{
+        color: grey;
+        margin-left: 180px;
+    }
+    .helperDesc{
+        font-size: 16px;
+    }
+    
+    .bookingButtons{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        gap: 10px;
+justify-content: center;   
+align-items: center;     }
+        
+    
+}
+@media only screen and (min-width: 1200px) {
+    .popupStyles{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 800px;
+        height:500px;
+        background-color: white;
+        z-index:  2;
+        border-radius: 5px;
+        padding: 20px;
+        box-sizing: border-box,
+    }
+    .helperImage{
+        width: 300px;
+        height: 300px;
+        max-width: 100%;
+    }
+    .six{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .helperDesc{
+        font-size: 16px;
+        margin-top: 100px;
+    }
+    .bookingButtons{
+        margin-left: 400px;
+        gap: 90px;
+    }
+    .price{
+        width: 100px;
+        margin-left: -60px;
+    }
+    .book{
+        width:200px;
+        border-radius: 50px;
+    }
+}

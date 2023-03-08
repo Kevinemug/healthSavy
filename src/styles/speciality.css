@@ -1,0 +1,116 @@
+.specialityHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50PX;
+    max-width: 100%;
+}
+.speciality{
+    font-weight: bolder;
+    margin-left: 10px;
+    
+}
+.view{
+    color:#3590e6;
+    margin-right:10px;
+}
+.containerCard{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    gap:3px;
+    margin-left: 20px;
+    max-width: 100%;
+}
+.docnuContainer{
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+    max-width: 100%;
+}
+.top{
+    font-size: bold;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+    color: #3590e6;
+}
+.one{
+    max-width: 100%;
+    width: 100%;
+}
+.two{
+    max-width: 100%;
+    width: 100%;
+}
+.three{
+    max-width: 100%;
+    width: 100%;
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) { 
+
+
+
+    .containerCard{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr ;
+        gap:3px;
+        margin-left: 20px;
+        max-width: 100%;
+
+    }    
+
+
+    .speciality{
+        font-weight: bolder;
+        font-size: 20px;
+        margin-left: 20px;
+        
+    }
+    .view{
+        color:#3590e6;
+        margin-right: 20px;
+        font-size: 18px;
+
+    }
+    .docnuContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+    }
+    
+
+
+}
+@media only screen and (min-width: 1200px) {
+
+    .containerCard{
+display: flex;
+justify-content: center;
+    }    
+
+    .speciality{
+        font-weight: bolder;
+        font-size: 20px;
+        margin-left: 400px;
+        
+    }
+    .view{
+        color:#3590e6;
+        margin-right: 20px;
+        font-size: 18px;
+        margin-right: 400px;
+
+    }
+    .three{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 100px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+
+.top{
+    margin-top: 60px;
+}
+}

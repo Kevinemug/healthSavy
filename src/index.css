@@ -393,3 +393,6 @@ margin-left: 50px;
 .hosp-footer-block h5{
  color:#42CCCF
 }
+.removeUnder{
+  text-decoration: none;
+}

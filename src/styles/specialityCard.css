@@ -1,0 +1,29 @@
+.specialityCardContainer{
+
+box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.2);
+width:150px;
+height:150px;
+border-radius: 10px;
+
+
+}
+.lungs{
+
+font-size: 80px;
+color: #ad2020;
+
+}
+.lungsContainer{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.cardi{
+    font-weight: bolder;
+    color: grey;
+    margin-left: 30px;
+    
+}
+.docs{
+    margin-left: 35px;
+}

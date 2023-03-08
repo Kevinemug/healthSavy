@@ -1,0 +1,248 @@
+* body{
+    background:rgba(243,245,249,255);
+}
+    .appWelcome{
+        font-size: 12px;
+        margin-top: 5px;
+        color:#43D5CB;
+        }
+    .appointmentIconwel{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+
+    .appointmentSeachContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .appParagraph{
+        font-size: 12px;
+    }
+
+    .appSearch{
+
+border:1px solid #43D5CB;
+width:250px;
+height: 50px;
+border-radius: 250px;
+display: flex;
+flex-direction: row;
+background: #43D5CB;
+
+ }
+ .searchapp{
+margin-top: 20px;
+margin-left: 30px;
+font-size: 14px;
+color: white;
+ }
+    .appSearch input{
+        border: none;
+        background: #43D5CB;
+        width:250px;
+        height: 40px;
+        color: white;
+        height: 50px;
+        border-radius: 100px;
+
+    }
+    .appSearch input:focus{
+        border: none;
+    }
+    
+    .appSearch input::placeholder{
+        font-size: 11px;
+        text-align: center;
+        color:white
+    }
+    
+
+  
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) { 
+     .appWelcome{
+      font-size: 25px;
+      margin-top: 10px;
+      color:#43D5CB;
+      }
+      .appointmentIconwel{
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+          
+      }
+      .appIccon{
+          color: #919192;
+          font-size: 40px;
+          margin-top: 10px;
+      }
+
+      .appointmentSeachContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .appParagraph{
+        font-size: 20px;
+    }
+
+    .appSearch{
+        width: 641px;
+        height: 80px;
+        
+        background: #43D5CB;
+        border-radius: 15px;
+
+ }
+ .searchapp{
+margin-top: 20px;
+margin-left: 20px;
+font-size: 40px;
+color: white;
+ }
+    .appSearch input{
+        border: none;
+        background: #43D5CB;
+        width: 641px;
+        height: 80px;
+        color: white;
+        margin-top: 10px;
+        font-size: 30px;
+        height: 50px;
+        margin-left: 20px;
+        border-radius: 100px;
+
+    }
+    .appSearch input:focus{
+        border: none;
+        outline: none;
+    }
+    
+    .appSearch input::placeholder{
+        font-size: 20px;
+        text-align: center;
+        color:white
+    }
+    
+
+  
+
+
+
+
+
+
+
+
+}
+@media only screen and (min-width: 1200px) {
+    /* Add styles for computers here */
+    .appWelcome{
+        font-size: 25px;
+        margin-top: 10px;
+        color:#43D5CB;
+        }
+        .appointmentIconwel{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .appIccon{
+            color: #919192;
+            font-size: 40px;
+            margin-top: 10px;
+        }
+
+        /* SEARCH */
+        .appointmentSeachContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-left: -780px;
+            margin-top: 50px;
+        }
+        .appParagraph{
+            font-size: 20px;
+            margin-left: -20px;
+        }
+    
+        .appSearch{
+            width: 641px;
+            height: 80px;
+            margin-left: 40px;
+            background: #43D5CB;
+            border-radius: 15px;
+            margin-left: 300px;
+    max-width: 100%;
+     }
+     .searchapp{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 40px;
+    font-weight: 900px;
+    color: white;
+     }
+        .appSearch input{
+            border: none;
+            background: #43D5CB;
+            width: 641px;
+            height: 80px;
+            color: white;
+            margin-top: 10px;
+            font-size: 30px;
+            height: 50px;
+            margin-left: 20px;
+            border-radius: 100px;
+    
+        }
+        .appSearch input:focus{
+            border: none;
+            outline: none;
+        }
+        
+        .appSearch input::placeholder{
+            font-size: 20px;
+            text-align: center;
+            color:white
+        }
+        
+    
+      body{
+        overflow-x: hidden;
+    
+      }
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    
+  }
+
+
+
+
+
+
