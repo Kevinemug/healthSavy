@@ -1,14 +1,18 @@
 import React from "react";
 import ".././styles/nursaryCard.css";
-const NursaryCards = ({ title, description }) => {
+const NursaryCards = ({ title, description, img }) => {
   return (
     <>
       <div
         className="nurse-service-card"
-        style={{ background: `url("./image/hospital.jpg")` }}
+        style={{
+          backgroundImage: `url("${img}")`,
+        }}
       >
-        <h2>{title}</h2>
-        <p>{description}</p>
+        <div className="nurTcontainer">
+          <h2 className="nurTitle">{title}</h2>
+          <p>{description}</p>
+        </div>
       </div>
     </>
   );

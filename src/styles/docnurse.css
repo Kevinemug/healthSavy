@@ -39,6 +39,8 @@ font-weight: bolder;
     margin-left: 100px;
     margin-top: 10px;
     color: #56a2e9;
+    text-shadow: 1px 1px 1px black;
+  
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) { 

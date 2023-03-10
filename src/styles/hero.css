@@ -16,11 +16,17 @@
   display: flex;
   align-items: center;
   color: #333333;
+  color: grey;
+  text-shadow: 1px 1px 1px black;
+
 }
 .descriptionb {
   color: #333333;
   font-weight: bolder;
   font-size: 12px;
+  color: grey;
+  text-shadow: 1px 1px 1px black;
+
 }
 
   .heroBtn {

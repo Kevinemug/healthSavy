@@ -6,15 +6,60 @@
     margin: 16px;
     height: auto;
     max-width: 300px;
+    height:220px;
+/* background-size: contain; */
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+  }
+  .serviceHeader{
+    color: grey;
+    text-shadow: 1px 1px 1px black;
+    display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
   }
   
   .nurse-service-card h2 {
-    font-size: 24px;
+    font-size: 16px;
     margin-bottom: 8px;
+    font-weight: bolder;
+    color: rgb(234, 199, 199);
+    text-shadow: 1px 1px 1px black;
+    
   }
   
   .nurse-service-card p {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
+    font-weight: bolder;
+    color: azure;
+    text-shadow: 1px 1px 1px black;
     margin-bottom: 0;
+  }
+  .nurTcontainer{
+    margin-top: 100px;
+
+  }
+  .app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media only screen and (min-width: 481px) and (max-width: 1024px) { 
+    .app{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+  }
+  @media only screen and (min-width: 1200px) {
+    .app{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
   }
