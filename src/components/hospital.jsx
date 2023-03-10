@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "./hero";
+import Fade from "react-awesome-reveal";
 import HospitalCards from "./hospitalCards";
 import Search from "./search";
 const Hospital = () => {

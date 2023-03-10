@@ -12,7 +12,7 @@ const AppointmentBooking = () => {
     <>
       <div className="appointmentBookingContainer">
         <div className="overlayStyles"></div>
-        <div className="  popupStyles  ">
+        <div className="  popupStyles  animate__animated animate__Roll">
           <button className="cancel" onClick={handleCancel}>
             X
           </button>
