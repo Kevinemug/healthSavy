@@ -5,7 +5,7 @@ import NursaryCards from "./nursaryCards";
 const Nursary = () => {
   return (
     <>
-      <NavLink to="/appointmentsPage">
+      <NavLink to="/appointmentsPage" style={{ textDecoration: "none" }}>
         <Hero
           title="Services"
           description="Taking Care Of You Is Our Top Priority"
