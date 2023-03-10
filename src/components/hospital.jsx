@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "./Footer";
 import Hero from "./hero";
 import HospitalCards from "./hospitalCards";
 import Search from "./search";
@@ -16,8 +15,9 @@ const Hospital = () => {
         speciality="Specialized In Your medical condition"
         search="search by medical condition"
       />
-      <p className="topSearches">Top Seaches</p>
-
+      <div className="top">
+        <p className="topSearches">Top Seaches</p>
+      </div>
       <div className="hosCardsContainer">
         <HospitalCards
           hospitalName="H hospital"
@@ -50,7 +50,6 @@ const Hospital = () => {
           hospitalImg="http://whitearkitekter.com/wp-content/uploads/2017/10/Nya-Karolinska-S-White-Arkitekter-c-16.9.jpg"
         />
       </div>
-      <Footer />
     </>
   );
 };

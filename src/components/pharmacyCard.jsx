@@ -1,6 +1,5 @@
 import React from "react";
 import Pharmacy from "./pharmacy";
-import Footer from "./Footer";
 const PharmacyCard = ({ img, medicineName }) => {
   return (
     <>

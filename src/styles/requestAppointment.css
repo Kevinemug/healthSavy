@@ -18,7 +18,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 300px;
-    height: 500px;
+    height: auto;
     background-color: white;
     z-index:  2;
     border-radius: 5px;
@@ -46,6 +46,7 @@
 }
 .text,
 		input[type="number"],
+		input[type="tel"],
 		input[type="password"],
 		select,
 		textarea {
@@ -57,6 +58,18 @@
 			box-sizing: border-box;
 			font-size: 12px;
 		}
+        .text,
+		input[type="number"],
+		input[type="tel"],
+		input[type="password"],
+		select,
+		textarea:focus {
+            outline: none;
+        }
+        textarea::placeholder{
+            font-size: 10px;
+            font-style: italic;
+        }
         input[type="submit"] {
 			background-color: #43D5CB;
 			color: white;
@@ -85,3 +98,9 @@
             width:100%;
             max-width: 100%;
         }
+        .error {
+            color: red;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+          }
+          

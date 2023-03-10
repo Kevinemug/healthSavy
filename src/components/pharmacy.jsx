@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Hero from "./hero";
 import Search from "./search";
-import PharmacyCard from "./pharmacyCard";
-import Footer from "./Footer";
+import PharmaCard from "./pharmaCard";
 
 const Pharmacy = () => {
   const [showContainer, setShowContainer] = useState(false);
@@ -24,27 +23,35 @@ const Pharmacy = () => {
         speciality="with the medicine you are looking for"
         search="search by name of medicine"
       />
-      <p className="topSearches">Top Seaches</p>(
+      <p className="topSearches" style={{ marginLeft: "20px" }}>
+        Top Seaches
+      </p>
       <div className="containerPharma">
-        <PharmacyCard
+        <PharmaCard
           img="https://images.ctfassets.net/lnbo4srla2av/2FLShzxAxG1INtclSxoG1e/e7a6adf34ed49217173d8d31680cf88e/OCP-pill-pack--pharmacy-page--mobile.png?q=90"
-          medicineNamer="Birth Control Pills"
+          medicineName="Birth Control Pills"
         />
-        <PharmacyCard
+        <PharmaCard
           img="https://images.ctfassets.net/lnbo4srla2av/Y9xn9RSWcn4seERXX8UWw/c268b3198c47ca124f69f8eaf9750699/carousel-generic-box-title.png?q=90"
-          medicineNamer=""
+          medicineName="Amoxy"
         />
-        <PharmacyCard
+        <PharmaCard
           img="https://www.dailychemist.com/wp-content/uploads/2020/03/para500.jpg"
-          medicineNamer="Paracetamol"
+          medicineName="Paracetamol denk"
         />
-        <PharmacyCard
+        <PharmaCard
           img="https://homehealth-uk.com/wp/wp-content/uploads/crescent-paracetamol-box-pills.jpg"
-          medicineNamer="Paracetamol"
+          medicineName="Paracetamol"
+        />
+        <PharmaCard
+          img="https://homehealth-uk.com/wp/wp-content/uploads/crescent-paracetamol-box-pills.jpg"
+          medicineName="Paracetamol"
+        />
+        <PharmaCard
+          img="https://homehealth-uk.com/wp/wp-content/uploads/crescent-paracetamol-box-pills.jpg"
+          medicineName="Paracetamol"
         />
       </div>
-      )
-      <Footer />
     </>
   );
 };

@@ -1,0 +1,50 @@
+.overlayStyless{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.popupStyless{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 320px;
+    background-color: white;
+    z-index:  2;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width:100%;
+}
+.medInfoimg{
+    height: 160px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.medName{
+font-size: 12px;
+color: grey;
+font-weight: bolder;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.medDesc{
+font-size: 11px;
+font-style: italic;
+color: grey;
+}
+.backBtn{
+    background:   #3590e6;
+    color: white;
+    border: 1px solid dodgerblue;
+    font-size: 12px;
+    margin-top: 20px;
+    font-style: italic;
+}

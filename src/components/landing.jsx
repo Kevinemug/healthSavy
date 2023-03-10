@@ -3,7 +3,7 @@ import ImageSlider from "./imageSlider";
 const Landing = () => {
   return (
     <>
-      <ImageSlider />
+      <ImageSlider className="overall" />
     </>
   );
 };

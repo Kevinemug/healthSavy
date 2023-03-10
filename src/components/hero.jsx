@@ -1,6 +1,7 @@
 import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 import Fade from "react-awesome-reveal";
+import ".././styles/hero.css";
 
 const Hero = ({ title, description, image, fn }) => {
   return (
@@ -20,12 +21,10 @@ const Hero = ({ title, description, image, fn }) => {
           </p>
         </div>
         <div className="btnContainer">
-          <Fade left>
-            <button className="heroBtn animate__animated animate__bounce">
-              {" "}
-              Learn More
-            </button>
-          </Fade>
+          <button className="heroBtn animate__animated animate__bounce">
+            {" "}
+            Learn More
+          </button>
           <Fade right>
             <div className="heroBtnSpan">
               <BsArrowRightShort />

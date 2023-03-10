@@ -1,0 +1,20 @@
+.nurse-service-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    padding: 16px;
+    margin: 16px;
+    height: auto;
+    max-width: 300px;
+  }
+  
+  .nurse-service-card h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .nurse-service-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }

@@ -37,7 +37,7 @@ const AppointmentBooking = () => {
           </div>
           <div className="bookingButtons">
             <button className="price"> price $50</button>
-            <Link to="/requestAppointment">
+            <Link to="/log">
               <button className="book">Request Appointment</button>
             </Link>
           </div>

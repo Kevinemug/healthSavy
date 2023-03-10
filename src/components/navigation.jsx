@@ -13,7 +13,7 @@ export const Navigation = () => {
       <button className="toggle-button" onClick={handleToggle}>
         {isOpen ? <FaTimes /> : <FaBars />}
       </button>
-      <h5 style={{ color: " #43D5CB" }}>Health Savy</h5>
+      {/* <h5 style={{ color: " #43D5CB" }}>Health Savy</h5> */}
       <ul className={`menu ${isOpen ? "open" : ""}`}>
         <NavLink to="/">
           <li>
@@ -46,6 +46,7 @@ export const Navigation = () => {
           </li>
         </NavLink>
       </ul>
+      z
     </div>
   );
 };

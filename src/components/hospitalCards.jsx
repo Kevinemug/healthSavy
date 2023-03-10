@@ -1,5 +1,6 @@
 import React from "react";
 import { HiLocationMarker } from "react-icons/hi";
+import ".././styles/hospitalCard.css";
 const HospitalCards = ({ hospitalImg, hospitalName, hospitalKm }) => {
   return (
     <>

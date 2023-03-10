@@ -17,9 +17,9 @@ function ImageSlider() {
   };
 
   return (
-    <div style={{ maxWidth: "100%" }}>
+    <div>
       <div className="overall">
-        <Slider {...settings}>
+        <Slider {...settings} className="overall">
           <Hero
             title="Appointments"
             description="You Have Been Waiting For"

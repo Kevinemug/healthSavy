@@ -1,5 +1,6 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
+import ".././styles/search.css";
 const Search = ({ facility, speciality, search }) => {
   return (
     <>
