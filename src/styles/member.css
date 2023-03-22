@@ -1,0 +1,37 @@
+.formi{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding:20px;
+}
+.apply{
+    font-size:14px;
+    color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1200px){
+
+    .formi{
+        width: 600px;
+        max-width: 100%;
+        overflow-x: hidden;
+        margin-left: 500px;
+    }
+    .apply{
+        font-size:30px;
+        margin-bottom: 40px;
+        color: dodgerblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formi input{
+        margin-top: 15px;
+    }
+    
+
+
+}

@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import ".././styles/requestAppointment.css";
 import { useNavigate, Link } from "react-router-dom";
 import Success from "./success";
+import axios from "axios";
 const RequestAppointment = () => {
   const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+  const [email, setEmail] = useState("");
+
   const navigate = useNavigate();
   const [formInputs, setFormInputs] = useState({
     name: "",
@@ -21,8 +24,7 @@ const RequestAppointment = () => {
     const { name, value } = event.target;
     setFormInputs({ ...formInputs, [name]: value });
   };
-
-  const handleFormSubmit = (event) => {
+  const handleFormSubmit = async (event) => {
     event.preventDefault();
     const { name, number, message } = formInputs;
     const isNameValid = name.trim().length > 2;
@@ -34,14 +36,45 @@ const RequestAppointment = () => {
       message: isMessageValid,
     });
     setFormSubmitted(true);
+
     if (isNameValid && isMessageValid) {
-      // Submit the form data
-      setShowSuccessPopup(true); // Reset form inputs and validity
+      try {
+        const response = await axios.post(
+          `https://health-savvy.onrender.com/api/booking/doctor/64131981b8cc5d7abe053c06`,
+          {
+            email,
+            phoneNumber: number,
+            message,
+          },
+          {
+            headers: {
+              Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTE5MTg1OGRjNGRhM2MwMWQ4N2ExYyIsImlhdCI6MTY3ODk2ODE5OCwiZXhwIjoxNjgxNTYwMTk4fQ.emaGc0NuimiWtwn97FpXcs-ALv_g-WQbyUGEvzYbsvo`,
+            },
+          }
+        );
+        console.log(response);
+        setShowSuccessPopup(true);
+        setFormInputs({
+          name: "",
+          number: "",
+          message: "",
+        });
+        setFormValidity({
+          name: true,
+          number: true,
+          message: true,
+        });
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
-
   const handleCancel = () => {
     navigate("/appointmentBooking");
+  };
+  const validateEmail = (email) => {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
   };
 
   return (
@@ -83,6 +116,17 @@ const RequestAppointment = () => {
                 Please enter a valid phone number
               </p>
             )}
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+              className="text"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
 
             <label htmlFor="message">Message:</label>
             <textarea

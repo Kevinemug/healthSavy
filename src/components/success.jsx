@@ -5,7 +5,7 @@ const Success = ({ description }) => {
   return (
     <>
       <div className="message overlay">
-        <div className="popup  animate__animated animate__bounce">
+        <div className="popup  ">
           <div className="success-icon">
             <FaCheckCircle style={{ fontSize: "40px", color: "green" }} />
           </div>

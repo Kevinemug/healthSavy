@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Hero from "./hero";
 import Search from "./search";
 import PharmaCard from "./pharmaCard";
+import { NavLink, Link } from "react-router-dom";
+import Member from "./member";
 
 const Pharmacy = () => {
   const [showContainer, setShowContainer] = useState(false);
@@ -18,6 +20,10 @@ const Pharmacy = () => {
         image="https://www.universityofcalifornia.edu/sites/default/files/generic-drugs-istock.jpg"
         onClick={handleButtonClick}
       />
+      <Link to="/memberShip">
+        <button>request membership</button>
+      </Link>
+
       <Search
         facility="Pharmacies"
         speciality="with the medicine you are looking for"

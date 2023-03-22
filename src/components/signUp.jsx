@@ -2,16 +2,21 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEnvelope, FaLock } from "react-icons/fa";
 import axios from "axios";
+import Success from "./success";
 
-const LoginForm = () => {
+const SignUp = () => {
   const navigate = useNavigate();
   const [formInputs, setFormInputs] = useState({
     email: "",
     password: "",
+    firstName: "",
+    lastName: "",
   });
   const [formErrors, setFormErrors] = useState({
     email: "",
     password: "",
+    firstName: "",
+    lastName: "",
   });
 
   const validateEmail = (email) => {
@@ -34,12 +39,23 @@ const LoginForm = () => {
     if (formInputs.password.length < 4) {
       errors.password = "Password must be at least  5 characters";
     }
+    if (formInputs.firstName.length < 3) {
+      errors.firstName = "Enter you first name correctly";
+    }
+    if (formInputs.lastName.length < 3) {
+      errors.lastName = "Enter you last  name correctly";
+    }
     if (Object.keys(errors).length === 0) {
       axios
-        .post("https://health-savvy.onrender.com/api/client/login", formInputs)
+        .post(
+          "https://health-savvy.onrender.com/api/client/createAccount",
+          formInputs
+        )
         .then((response) => {
           console.log(response);
-          navigate("/requestAppointment");
+          //   <Success description="you have successfully created an account" />;
+          alert("Account created successfully,you can now login!");
+          navigate("/log");
         })
         .catch((error) => {
           console.log(error);
@@ -62,11 +78,51 @@ const LoginForm = () => {
               <h4
                 style={{ color: "grey", fontStyle: "italic", fontSize: "12px" }}
               >
-                Login before you send request
+                sign up before you send appointment request
               </h4>
             </div>
             <div className="card-body">
               <form onSubmit={handleFormSubmit}>
+                <div className="form-group">
+                  <label htmlFor="firstName">First Name</label>
+                  <input
+                    type="text"
+                    className={`form-control ${
+                      formErrors.firstName ? "is-invalid" : ""
+                    }`}
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Enter first name"
+                    value={formInputs.firstName}
+                    onChange={handleInputChange}
+                    required
+                  />
+                  {formErrors.firstName && (
+                    <div className="invalid-feedback">
+                      {formErrors.firstName}
+                    </div>
+                  )}
+                </div>
+                <div className="form-group">
+                  <label htmlFor="lastName">Last Name</label>
+                  <input
+                    type="text"
+                    className={`form-control ${
+                      formErrors.lastName ? "is-invalid" : ""
+                    }`}
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Enter last name"
+                    value={formInputs.lastName}
+                    onChange={handleInputChange}
+                    required
+                  />
+                  {formErrors.lastName && (
+                    <div className="invalid-feedback">
+                      {formErrors.lastName}
+                    </div>
+                  )}
+                </div>
                 <div className="form-group">
                   <label htmlFor="email">Email</label>
                   <div className="input-group">
@@ -122,7 +178,7 @@ const LoginForm = () => {
                 <button type="submit" className="btn btn-primary btn-block">
                   Login
                 </button>
-              </form>{" "}
+              </form>
               <div className="text-center mt-3">
                 <p
                   style={{
@@ -131,7 +187,7 @@ const LoginForm = () => {
                     fontSize: "12px",
                   }}
                 >
-                  Don't have an account? <Link to="/signUp">Sign up here</Link>
+                  Already have an account? <Link to="/log">login here</Link>
                 </p>
               </div>
             </div>
@@ -142,4 +198,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default SignUp;
