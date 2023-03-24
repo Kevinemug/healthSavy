@@ -32,6 +32,7 @@ import Breadcrumbs from "./views/ui/Breadcrumbs";
 import About from "./views/About";
 import Member from "./components/member";
 import DocMember from "./components/docMember";
+import HospitalForm from "./components/hospitalForm";
 
 const App = () => {
   return (
@@ -64,6 +65,7 @@ const App = () => {
         </Route>
 
         <Route path="/signUp" element={<SignUp />} />
+        <Route path="/hospitalForm" element={<HospitalForm />} />
         <Route path="/profile/login" element={<About />} />
       </Routes>
     </>

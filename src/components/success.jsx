@@ -12,7 +12,7 @@ const Success = ({ description }) => {
           <div className="desc" style={{ fontStyle: "italic" }}>
             {description}
           </div>
-          <NavLink to="/appointmentsPage">
+          <NavLink to="/">
             <button className="btn btn-success" style={{ marginLeft: "100px" }}>
               close
             </button>

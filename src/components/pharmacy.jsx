@@ -19,10 +19,8 @@ const Pharmacy = () => {
         description="We are Less Than 1 KM Away!"
         image="https://www.universityofcalifornia.edu/sites/default/files/generic-drugs-istock.jpg"
         onClick={handleButtonClick}
+        link="/memberShip"
       />
-      <Link to="/memberShip">
-        <button>request membership</button>
-      </Link>
 
       <Search
         facility="Pharmacies"

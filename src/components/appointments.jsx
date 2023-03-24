@@ -11,11 +11,9 @@ const Appointments = () => {
             title="Appointments"
             description="You Have Been Waiting For"
             image="https://www.communicloud.com/wp-content/uploads/2021/12/Security-in-Healthcare.jpg"
+            link="/docMemberShip"
           />
         </NavLink>
-        <Link to="/docMemberShip">
-          <button>become a member today</button>
-        </Link>
       </Fade>
     </>
   );

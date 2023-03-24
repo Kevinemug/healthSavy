@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BsArrowRightShort } from "react-icons/bs";
 import Fade from "react-awesome-reveal";
 import ".././styles/hero.css";
 
-const Hero = ({ title, description, image, fn }) => {
+const Hero = ({ title, description, image, fn, link }) => {
   return (
     <>
       <div
@@ -19,6 +20,20 @@ const Hero = ({ title, description, image, fn }) => {
           <p className=" descriptionb animate__animated animate__bounce">
             {description}
           </p>
+        </div>
+        <div className="btnContainer">
+          <Link to={link}>
+            <button className="heroBtn animate__animated animate__bounce">
+              {" "}
+              Request Membership
+            </button>
+          </Link>
+
+          <Fade right>
+            <div className="heroBtnSpan">
+              <BsArrowRightShort />
+            </div>
+          </Fade>
         </div>
         <div className="btnContainer">
           <button className="heroBtn animate__animated animate__bounce">

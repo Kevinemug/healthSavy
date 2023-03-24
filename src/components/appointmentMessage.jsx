@@ -156,6 +156,28 @@ const AppointmentMessage = () => {
       });
   }, []);
 
+  const [buttonStyles, setButtonStyles] = useState({
+    backgroundColor: "blue",
+    color: "white",
+  });
+  const handleClick = (id, name, email) => {
+    const confirmed = window.confirm(
+      `Are you sure you want to confirm ${name}?`
+    );
+
+    if (confirmed) {
+      setButtonStyles({
+        ...buttonStyles,
+        [id]: {
+          backgroundColor: "green",
+          color: "white",
+          borderRadius: "5px",
+          height: "36px",
+        },
+      });
+    }
+  };
+
   return (
     <>
       <div>
@@ -172,9 +194,8 @@ const AppointmentMessage = () => {
                   <th>Patients</th>
                   <th>Medical Condition</th>
 
-                  <th>Status</th>
-                  <th>Patient Info</th>
-                  <th>Check</th>
+                  <th>Action</th>
+                  <th>Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -198,15 +219,35 @@ const AppointmentMessage = () => {
                       </div>
                     </td>
                     <td>{item.message}</td>
-                    {/* <td>
-                      {tdata.status === "pending" ? (
-                        <span className="p-2 bg-danger rounded-circle d-inline-block ms-3"></span>
-                      ) : tdata.status === "holt" ? (
-                        <span className="p-2 bg-warning rounded-circle d-inline-block ms-3"></span>
-                      ) : (
-                        <span className="p-2 bg-success rounded-circle d-inline-block ms-3"></span>
-                      )}
-                    </td> */}
+                    <td>
+                      {" "}
+                      <button
+                        onClick={() =>
+                          handleClick(
+                            item._id,
+                            item.client.lastName + " " + item.client.firstName
+                          )
+                        }
+                        style={
+                          buttonStyles[item._id] || {
+                            backgroundColor: "dodgerblue",
+                            borderRadius: "5px",
+                            color: "white",
+                            height: "36px",
+                          }
+                        }
+                      >
+                        {buttonStyles[item._id] ? "Confirmed" : "Confirm"}
+                      </button>
+                    </td>
+                    <td>
+                      <button
+                        class="btn btn-danger"
+                        onClick={() => handleDecline(item._id)}
+                      >
+                        Decline
+                      </button>
+                    </td>
                   </tr>
                 ))}
               </tbody>

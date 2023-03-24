@@ -1,14 +1,15 @@
 .hospitalCardContainer{
     box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.2);
-    height:80px;
+    height:100px;
 width: 150px;
 margin-bottom: 70px;
       
 }
 .imageContainer{
 height: 100px;
-background-size: contain;
-}
+
+background-size: cover;
+background-position: center;}
 .hospitalName{
     font-size: 12px;
     color:grey;

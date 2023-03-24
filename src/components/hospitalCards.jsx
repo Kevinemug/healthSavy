@@ -15,7 +15,7 @@ const HospitalCards = ({ hospitalImg, hospitalName, hospitalKm }) => {
         <div className="locationContainer">
           <span>
             <HiLocationMarker style={{ color: "dodgerblue" }} />{" "}
-            <span className="loc"> Located {hospitalKm}km from you</span>
+            <span className="loc"> Located {hospitalKm}</span>
           </span>
         </div>
       </div>
